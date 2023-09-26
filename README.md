@@ -13,8 +13,6 @@ Grade: 125 / 100
 
 ![grade](extra/grade.jpg)
 
-![grade](https://github.com/peterbikes/42-School-Common-Core/blob/main/01_Born2beroot/extra/grade.jpg)
-
 **Disclaimer:** This is a list of very *loose* concepts that I studied while investigating for this project. Not organized in any way, and it might only be useful if you are a complete beginner. Please refer to INDEX to see all contents. There is also a Bibliography at the end with all (mostly) the places where I got this info.
 
 If this was useful to you, please do not forget to leave me a :star:
