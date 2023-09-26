@@ -1,4 +1,4 @@
-![Header](https://github.com/peterbikes/42-School-Common-Core/blob/main/01_Born2beroot/extra/header.jpg)
+![Header](https://github.com/peterbikes/42-School-Common-Core/blob/main/01_Born2beroot/extra/header.png)
 
 ![Screaming Root](https://tenor.com/en-GB/view/ron-weasley-harry-potter-mandrake-scream-piercing-gif-5055272.gif)
 # Born2beroot
