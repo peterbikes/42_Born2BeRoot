@@ -19,26 +19,16 @@ Grade: 125 / 100
 <br>
 
 - [Loose Concepts](#loose-concepts)
-<br>
-        1. [Virtual Machine](#virtual-machine)
-<br>
-        2. [Kernel](#kernel)
-<br>
-        3. [Linux Kernel](#linux-kernel)
-<br>
-        4. [Unix](#unix)
-<br>
-        5. [GUI](#gui)
-<br>
-        6. [Linux Distros](#linux-distros)
-<br>
-        7. [The Debian Branch](#the-debian-branch)
-<br>
-        8. [The Suse Branch](#linux-distros)
-<br>
-        9. [The RedHat Branch](#the-redhat-branch)
-<br>
-        10. [Arch Linux](#arch-linux)
+1. [Virtual Machine](#virtual-machine)
+2. [Kernel](#kernel)
+3. [Linux Kernel](#linux-kernel)
+4. [Unix](#unix)
+5. [GUI](#gui)
+6. [Linux Distros](#linux-distros)
+7. [The Debian Branch](#the-debian-branch)
+8. [The Suse Branch](#linux-distros)
+9. [The RedHat Branch](#the-redhat-branch)
+10. [Arch Linux](#arch-linux)
 - [Things you should know during project defense](#things-you-should-know-during-project-defense)
         
 
