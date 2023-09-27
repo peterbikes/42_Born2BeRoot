@@ -14,44 +14,69 @@ Grade: 125 / 100
 ![grade](extra/grade.jpg)
 
 
-## index 
+## Index 
 
 <br>
 
 - [Loose Concepts](#loose-concepts)
+<br>
+        1. [Virtual Machine](#virtual-machine)
+<br>
+        2. [Kernel](#kernel)
+<br>
+        3. [Linux Kernel](#linux-kernel)
+<br>
+        4. [Unix](#unix)
+<br>
+        5. [GUI](#gui)
+<br>
+        6. [Linux Distros](#linux-distros)
+<br>
+        7. [The Debian Branch](#the-debian-branch)
+<br>
+        8. [The Suse Branch](#linux-distros)
+<br>
+        9. [The RedHat Branch](#the-redhat-branch)
+<br>
+        10. [Arch Linux](#arch-linux)
+- [Things you should know during project defense](#things-you-should-know-during-project-defense)
+        
+
 - [List of useful commands](#list-of-useful-commands) 
 - [Questions I was asked when evaluating the project](#questions-i-was-asked-when-evaluating-the-project)
 - [Bibliography](#bibliography)
 
 <br>
 
-----
-<br>
-
 ## Loose Concepts
 
-<br>
 
-**Virtual Machine:** A virtual machine (VM) is a digital version of a physical computer. Virtual machine software can run programs and operating systems, store data, connect to networks, and do other computing functions, and requires maintenance such as updates and system monitoring.
+### Virtual Machine 
+A virtual machine (VM) is a digital version of a physical computer. Virtual machine software can run programs and operating systems, store data, connect to networks, and do other computing functions, and requires maintenance such as updates and system monitoring.
 Virtual Machines are extremely flexible - you can tell them how many processes they can run, how much RAM they can use, etc etc etc. They are specially usefull for developers as you can emulate any OS you wish to in order to code specifically for that environment. Plus, if you do anything wrong when using a VM, you can just delete it and start over, if you want to test anything that you are not sure of, you can take a snapshot of the maching at that state, and proceed from there, going back anytime you wish to do so, among other possibilities. Virtual Machines are completely isolated, they are not "aware" of what they are. If a VM is hacked, for example, the main OS might not even notice it.
 In order to create a Virtual Machine, you need an Hypervisor - this is something like Oracle, or VirtualBox. This is responsible for creating a virtual CPU, RAM, storage, using only the resources available from your main machine.
 There are Type 1 and 2 Hypervisors: A type 2 HV uses an OS, and then a software like the one we use on 42. Type 1 is installed directly on the hardware.
 
-**Kernel:** The kernel is a computer program at the core of a computer's operating system and generally has complete control over everything in the system. It is the portion of the operating system code that is always resident in memory and facilitates interactions between hardware and software components. A full kernel controls all hardware resources (e.g. I/O, memory, cryptography) via device drivers, arbitrates conflicts between processes concerning such resources, and optimizes the utilization of common resources e.g. CPU & cache usage, file systems, and network sockets. On most systems, the kernel is one of the first programs loaded on startup (after the bootloader). It handles the rest of startup as well as memory, peripherals, and input/output (I/O) requests from software, translating them into data-processing instructions for the central processing unit. The kernel functions since the computer is turned on, until it is turned off, and it might be considered the most important part of the OS.
+### Kernel
+The kernel is a computer program at the core of a computer's operating system and generally has complete control over everything in the system. It is the portion of the operating system code that is always resident in memory and facilitates interactions between hardware and software components. A full kernel controls all hardware resources (e.g. I/O, memory, cryptography) via device drivers, arbitrates conflicts between processes concerning such resources, and optimizes the utilization of common resources e.g. CPU & cache usage, file systems, and network sockets. On most systems, the kernel is one of the first programs loaded on startup (after the bootloader). It handles the rest of startup as well as memory, peripherals, and input/output (I/O) requests from software, translating them into data-processing instructions for the central processing unit. The kernel functions since the computer is turned on, until it is turned off, and it might be considered the most important part of the OS.
 
 ![kernel](extra/kernel.png)
 
-**Linux kernel:** The Linux kernel is a free and open-source, monolithic, modular, multitasking, Unix-like operating system kernel. It was originally authored in 1991 by Linus Torvalds for his i386-based PC, and it was soon adopted as the kernel for the GNU operating system, which was written to be a free (libre) replacement for Unix.
+### Linux kernel 
+The Linux kernel is a free and open-source, monolithic, modular, multitasking, Unix-like operating system kernel. It was originally authored in 1991 by Linus Torvalds for his i386-based PC, and it was soon adopted as the kernel for the GNU operating system, which was written to be a free (libre) replacement for Unix.
 A common missconception is that Linux is an OS, but it is only a kernel. GNU, an OS, was often combined with LINUX, as it was also free. This popular combination (LINUX + GNU) was often called just 'Linux', which caused the idea that Linux is an OS.
 
-**UNIX:** Unix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, whose development started in 1969 at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others.
+### UNIX
+Unix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, whose development started in 1969 at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others.
 The most popular version of UNIX used today is MacOS.
 
 ![unix](extra/unix.png)
 
-**GUI:** The GUI, graphical user interface, is a form of user interface that allows users to interact with electronic devices through graphical icons and audio indicator such as primary notation, instead of text-based UIs, typed command labels or text navigation. GUIs were introduced in reaction to the perceived steep learning curve of CLIs (command-line interfaces), which require commands to be typed on a computer keyboard.
+### GUI
+The GUI, graphical user interface, is a form of user interface that allows users to interact with electronic devices through graphical icons and audio indicator such as primary notation, instead of text-based UIs, typed command labels or text navigation. GUIs were introduced in reaction to the perceived steep learning curve of CLIs (command-line interfaces), which require commands to be typed on a computer keyboard.
 
-**Distro:** A Linux distribution (often abbreviated as distro) is an operating system made from a software collection that includes the Linux kernel and, often, a package management system. Linux users usually obtain their operating system by downloading one of the Linux distributions, which are available for a wide variety of systems ranging from embedded devices (for example, OpenWrt) and personal computers (for example, Linux Mint) to powerful supercomputers (for example, Rocks Cluster Distribution).
+### Linux Distros
+A Linux distribution (often abbreviated as distro) is an operating system made from a software collection that includes the Linux kernel and, often, a package management system. Linux users usually obtain their operating system by downloading one of the Linux distributions, which are available for a wide variety of systems ranging from embedded devices (for example, OpenWrt) and personal computers (for example, Linux Mint) to powerful supercomputers (for example, Rocks Cluster Distribution).
 
 A typical Linux distribution comprises a Linux kernel, GNU tools and libraries, additional software, documentation, a window system (the most common being the X Window System, or, more recently, Wayland), a window manager, and a desktop environment.
 
@@ -61,61 +86,63 @@ There are four main branches when it comes to Linux distros:
 
 ![debian](extra/debian.png)
 
-**The Debian Branch**
-    - Easiest to start if you are a complete beginer;
-    - Most of Debian distros are based on UBUNTO, the most popular, most of commands and operations are the same as in UBUNTO, you just have like different "skins", like Kubunto or LinuxMint;
-    - Most of them use apt as a package manager. If you see an apt command, you are most likely in a Debian based distro.
+### The Debian Branch
+- Easiest to start if you are a complete beginer;
+- Most of Debian distros are based on UBUNTO, the most popular, most of commands and operations are the same as in UBUNTO, you just have like different "skins", like Kubunto or LinuxMint;
+- Most of them use apt as a package manager. If you see an apt command, you are most likely in a Debian based distro.
 
 ![suse](extra/suse.png)
 
-**The Suse Branch**
-    - One of the first distros of Linux;
-    - The SUSE Linux Enterprise Server (SLES) is designed for use in mainframes, servers, and workstations.
+### The Suse Branch
+- One of the first distros of Linux;
+- The SUSE Linux Enterprise Server (SLES) is designed for use in mainframes, servers, and workstations.
 
 ![redhat](extra/redhat.png)
 
-**The RedHat Branch**
-    - Fedora, the distro used by Linus Torvalds, is part of this branch.
-    - Very solid, high level of security, preformance focoused;
+### The RedHat Branch
+- Fedora, the distro used by Linus Torvalds, is part of this branch.
+- Very solid, high level of security, preformance focoused;
 
 ![arch](extra/arch.png)
 
-**Arch Linux | Gentoo Branch**
-    - For advanced users, very community driven;
-    - Very modular, you have to install pretty much everything.
+### Arch Linux
+- For advanced users, very community driven;
+- Very modular, you have to install pretty much everything.
 
-Think of Linux distros like cars: there are trucks, smart cars, f1's. They are based on the same principle, but they all serve different needs.
+## Things you should know during project defense
 
-**LSBLK:** *(list block devices)* Lsblk is used to display details about block devices and these block devices (except ram disk) are basically those files that represent devices connected to the pc. It queries /sys virtual file system and udev db to obtain information that it displays. And it basically displays output in a tree-like structure. This command comes pre-installed with the util-Linux package.
+### LSBLK command
+*(list block devices)* Lsblk is used to display details about block devices and these block devices (except ram disk) are basically those files that represent devices connected to the pc. It queries /sys virtual file system and udev db to obtain information that it displays. And it basically displays output in a tree-like structure. This command comes pre-installed with the util-Linux package.
 
 ![lsblk](extra/lsblk.png)
 
 It provides the following information:
 
-    - Name of the device;
-    - MAJ MIN indicates the names with which the kernel refers internally to devices. The first number identifies to the kernel the device driver it must use to communicate with the device. The minor number identifies the specific device among all those using the same device driver.
-    - RM, for wether or not they are removable (0 for no, 1 for yes);
-    - RO, meaning if they are or not 'read-only' (0 for no, 1 for yes);
-    - Type of the device;
-    - Mount point to the file system.
+- Name of the device;
+- MAJ MIN indicates the names with which the kernel refers internally to devices. The first number identifies to the kernel the device driver it must use to communicate with the device. The minor number identifies the specific device among all those using the same device driver.
+- RM, for wether or not they are removable (0 for no, 1 for yes);
+- RO, meaning if they are or not 'read-only' (0 for no, 1 for yes);
+- Type of the device;
+- Mount point to the file system.
 
-**LVM:** Logical volume management (LVM) is a form of storage virtualization that offers system administrators a more flexible approach to managing disk storage space than traditional partitioning. This type of virtualization tool is located within the device-driver stack on the operating system. It works by chunking the physical volumes (PVs) into physical extents (PEs). The PEs are mapped onto logical extents (LEs) which are then pooled into volume groups (VGs). These groups are linked together into logical volumes (LVs) that act as virtual disk partitions and that can be managed as such by using LVM.
+### LVM 
+Logical volume management (LVM) is a form of storage virtualization that offers system administrators a more flexible approach to managing disk storage space than traditional partitioning. This type of virtualization tool is located within the device-driver stack on the operating system. It works by chunking the physical volumes (PVs) into physical extents (PEs). The PEs are mapped onto logical extents (LEs) which are then pooled into volume groups (VGs). These groups are linked together into logical volumes (LVs) that act as virtual disk partitions and that can be managed as such by using LVM.
 PV (physical volumes like disks) compose the VG (volume group), that can be divided in Logical Volumes.
 
-**Debian:** Debian, also known as Debian GNU/Linux, is a Linux distribution composed of free and open-source software, developed by the community-supported Debian Project, which was established by Ian Murdock on August 16, 1993. The first version of Debian (0.01) was released on September 15, 1993, and its first stable version (1.1) was released on June 17, 1996. The Debian Stable branch is the most popular edition for personal computers and servers. Debian is also the basis for many other distributions, most notably Ubuntu.
+### Debian
+Debian, also known as Debian GNU/Linux, is a Linux distribution composed of free and open-source software, developed by the community-supported Debian Project, which was established by Ian Murdock on August 16, 1993. The first version of Debian (0.01) was released on September 15, 1993, and its first stable version (1.1) was released on June 17, 1996. The Debian Stable branch is the most popular edition for personal computers and servers. Debian is also the basis for many other distributions, most notably Ubuntu.
 
-**CentOS:** CentOS (from Community Enterprise Operating System; also known as CentOS Linux) is a Linux distribution that provides a free and open-source community-supported computing platform, functionally compatible with its upstream source, Red Hat Enterprise Linux (RHEL). In January 2014, CentOS announced the official joining with Red Hat while staying independent from RHEL, under a new CentOS governing board.
+### Rocky Linux 
+Rocky Linux is a Linux distribution developed by Rocky Enterprise Software Foundation, which is a privately owned benefit corporation that describes itself as a "self imposed not-for-profit". It is intended to be a downstream, complete binary-compatible release using the Red Hat Enterprise Linux (RHEL) operating system source code. The project's aim is to provide a community-supported, production-grade enterprise operating system. Rocky Linux, along with Red Hat Enterprise Linux and SUSE Linux Enterprise, has become popular for enterprise operating system use.
 
-**Rocky Linux:** Rocky Linux is a Linux distribution developed by Rocky Enterprise Software Foundation, which is a privately owned benefit corporation that describes itself as a "self imposed not-for-profit". It is intended to be a downstream, complete binary-compatible release using the Red Hat Enterprise Linux (RHEL) operating system source code. The project's aim is to provide a community-supported, production-grade enterprise operating system. Rocky Linux, along with Red Hat Enterprise Linux and SUSE Linux Enterprise, has become popular for enterprise operating system use.
-
-**KDUMP:** Kdump is a feature of the Linux kernel that creates crash dumps in the event of a kernel crash. When triggered, kdump exports a memory image (also known as vmcore) that can be analyzed for the purposes of debugging and determining the cause of a crash. The dumped image of main memory, exported as an Executable and Linkable Format (ELF) object, can be accessed either directly through /proc/vmcore during the handling of a kernel crash, or it can be automatically saved to a locally accessible file system, to a raw device, or to a remote system accessible over network.
-
-**SELinux:** SELinux is a security enhancement to Linux which allows users and administrators more control over access control.
+### SELinux
+SELinux is a security enhancement to Linux which allows users and administrators more control over access control.
 Access can be constrained on such variables as which users and applications can access which resources. These resources may take the form of files. Standard Linux access controls, such as file modes (-rwxr-xr-x) are modifiable by the user and the applications which the user runs. Conversely, SELinux access controls are determined by a policy loaded on the system which may not be changed by careless users or misbehaving applications. SELinux also adds finer granularity to access controls. Instead of only being able to specify who can read, write or execute a file, for example, SELinux lets you specify who can unlink, append only, move a file and so on. SELinux allows you to specify access to many resources other than files as well, such as network resources and interprocess communication (IPC).
 
-**AppArmor:** AppArmor is an effective and easy-to-use Linux application security system. AppArmor proactively protects the operating system and applications from external or internal threats, even zero-day attacks, by enforcing good behavior and preventing both known and unknown application flaws from being exploited. AppArmor supplements the traditional Unix discretionary access control (DAC) model by providing mandatory access control (MAC). It has been included in the mainline Linux kernel since version 2.6.36 and its development has been supported by Canonical since 2009.
+### AppArmor
+AppArmor is an effective and easy-to-use Linux application security system. AppArmor proactively protects the operating system and applications from external or internal threats, even zero-day attacks, by enforcing good behavior and preventing both known and unknown application flaws from being exploited. AppArmor supplements the traditional Unix discretionary access control (DAC) model by providing mandatory access control (MAC). It has been included in the mainline Linux kernel since version 2.6.36 and its development has been supported by Canonical since 2009.
 
-**Aptitude | Apt:**
+### Aptitude | Apt
 
 First, what is a 'package'?
 
@@ -127,18 +154,18 @@ A package manager reduces the complexity for the end-user by automating the proc
 
 APT and Aptitude are package managers.
 
-What is APT?
+### What is APT?
 
 APT stands for Advanced Packaging Tool. It is an open-source tool, which means you can use it without the need to pay anything. APT is designed to handle software installation and removal. APT was part of Debian’s .deb package; however, it was updated to work with the RPM Package Manager.
 If you have used APT before, you would have noticed that it is a command-line tool. This means you need to use commands to work with it with no visual reference from a graphical interface (the initial plan was to include a graphical interface, but the idea was later dropped). To use it, you need to provide the package name. The package should have its sources specified in the ‘/etc/apt/sources.list.’ It should also contain all the dependencies list that the package needs to install automatically. If you use the apt command, it will not only download and install the required dependencies for the said package. As a user, you do not have to worry about the package dependencies.
 The approach taken by APT is flexible. This means that the user can configure how APT works, including adding new sources, providing up-gradation options, and so on!
 With time, APT showed improvements on how it can be handled. Also, Debian developers are in full control of how it gets updated.
 
-What is Aptitude?
+### What is Aptitude?
 
 Aptitude is also an advanced packaging tool. However, it is a front-end tool that gives users access to the user-interface to access functionality. This means that you can use Aptitude to install and remove packages using it. Debian created aptitude. But, with time, they released it for other RPM-based distributions.
 
-***Difference between APT and Aptitude***
+### Difference between APT and Aptitude
 
 Now that we have a good understanding of what APT and Aptitude has to offer, it is now time to learn about their difference. Let’s get started.
 The first difference you will notice is that APT is a lower-level package manager, and Aptitude is a high-level package manager. This means that APT can be used in other higher-level package managers.
@@ -147,17 +174,32 @@ For instance, apt-get can be used effectively for package up-gradation, installa
 If you have been following closely, you by now know that Aptitude comes with an interactive UI in addition to that of the text-only. APT, on the other hand, lacks UI. This is because of the nature of apt-get as it is a low-level package manager and hence restricted to the command-line interface. As Aptitude is a high-level tool, it offers both an interactive interface along with the command-line operation.
 In short, Aptitude has more features and hence can be termed as a better package management tool compared to that of apt-get.
 
-**SSH Service:** SSH or Secure Shell is a network communication protocol that enables two computers to communicate and share data. An inherent feature of ssh is that the communication between the two computers is encrypted meaning that it is suitable for use on insecure networks. SSH is often used to "login" and perform operations on remote computers but it may also be used for transferring data.
+### SSH Service
+SSH or Secure Shell is a network communication protocol that enables two computers to communicate and share data. An inherent feature of ssh is that the communication between the two computers is encrypted meaning that it is suitable for use on insecure networks. SSH is often used to "login" and perform operations on remote computers but it may also be used for transferring data.
 
-**UFW:** *(Uncomplicated Firewall)* One of the many heralded aspects of Linux is its security. From the desktop to the server, you’ll find every tool you need to keep those machines locked down as tightly as possible. For the longest time, the security of Linux was in the hands of iptables (which works with the underlying netfilter system). Although incredibly powerful, iptables is complicated — especially for newer users. To truly make the most out of that system, it may take weeks or months to get up to speed. Thankfully, a much simpler front end for iptables is ready to help get your system as secure as you need. That front end is Uncomplicated Firewall (UFW). UFW provides a much more user-friendly framework for managing netfilter and a command-line interface for working with the firewall. On top of that, if you’d rather not deal with the command line, UFW has a few GUI tools that make working with the system incredibly simple.
+### UFW
+*(Uncomplicated Firewall)* One of the many heralded aspects of Linux is its security. From the desktop to the server, you’ll find every tool you need to keep those machines locked down as tightly as possible. For the longest time, the security of Linux was in the hands of iptables (which works with the underlying netfilter system). Although incredibly powerful, iptables is complicated — especially for newer users. To truly make the most out of that system, it may take weeks or months to get up to speed. Thankfully, a much simpler front end for iptables is ready to help get your system as secure as you need. That front end is Uncomplicated Firewall (UFW). UFW provides a much more user-friendly framework for managing netfilter and a command-line interface for working with the firewall. On top of that, if you’d rather not deal with the command line, UFW has a few GUI tools that make working with the system incredibly simple.
 
-**SUDO:** Sudo stands for SuperUser (Switch User?) DO and is used to access restricted files and operations. By default, Linux restricts access to certain parts of the system preventing sensitive files from being compromised. The sudo command temporarily elevates privileges allowing users to complete sensitive tasks without logging in as the root user.
+### SUDO
+Sudo stands for SuperUser (Switch User?) DO and is used to access restricted files and operations. By default, Linux restricts access to certain parts of the system preventing sensitive files from being compromised. The sudo command temporarily elevates privileges allowing users to complete sensitive tasks without logging in as the root user.
 
-**TTY:** *(teletype)* Linux operating system represents everything in a file system. The hardware devices that we attach are also represented as a file. The terminal is also represented as a file. The tty command displays information related to terminal. The tty command of terminal basically prints the file name of the terminal connected to standard input. TTY is short of teletype, but popularly known as a terminal. It allows you to interact with the system by passing on data (your input) to the system, and displaying the output produced by the system.
+### TTY
+*(teletype)* Linux operating system represents everything in a file system. The hardware devices that we attach are also represented as a file. The terminal is also represented as a file. The tty command displays information related to terminal. The tty command of terminal basically prints the file name of the terminal connected to standard input. TTY is short of teletype, but popularly known as a terminal. It allows you to interact with the system by passing on data (your input) to the system, and displaying the output produced by the system.
 
-**Difference Between Static and Dynamic Memory Allocation:** Dynamic memory allocation refers to memory allocation that occurs during the execution or runtime of a program. Static memory refers to memory allocation that occurs during the compilation process.
+### DPKG
+*(Debian Package Manager)* dpkg is a tool to install, build, remove and manage Debian packages. The primary and more user-friendly front-end for dpkg is aptitude(1). dpkg itself is controlled entirely via command line parameters, which consist of exactly one action and zero or more options. The action-parameter tells dpkg what to do and options control the behavior of the action in some way.
 
-![memory_allocation](extra/memory_allocation.png)
+### APT vs DPKG
+APT is a front-end to dpkg that is more user-friendly than the earlier select front-end. While dpkg handles individual package activities, APT handles package relationships (particularly dependencies), as well as the sourcing and administration of higher-level versioning choices (release tracking and version pinning).
+
+### GREP
+*(global regular expression print)* In the simplest terms, grep (global regular expression print) is a small family of commands that search input files for a search string, and print the lines that match it.
+
+### GETENT
+*(get entry)* getent is a Unix command that helps a user get entries in a number of important text files called databases. This includes the passwd and group databases which store user information – hence getent is a common way to look up user details on Unix. Since getent uses the same name service as the system, getent will show all information, including that gained from network information sources such as LDAP. The databases it searches in are: ahosts, ahostsv4, ahostsv6, aliases, ethers (Ethernet addresses), group, gshadow, hosts, netgroup, networks, passwd, protocols, rpc, services, and shadow.
+
+### CHAGE
+The chage command is self-described as the "change user password expiry information" utility. According to the chage man page: The chage command changes the number of days between password changes and the date of the last password change.
 
 ## List of useful commands
 
@@ -219,20 +261,6 @@ In short, Aptitude has more features and hence can be termed as a better package
 
 - **'sha1sum \<machinename\>.vdi'** : generate the signature.txt file to be submitted for evaluation.
 
-**DPKG:** *(Debian Package Manager)* dpkg is a tool to install, build, remove and manage Debian packages. The primary and more user-friendly front-end for dpkg is aptitude(1). dpkg itself is controlled entirely via command line parameters, which consist of exactly one action and zero or more options. The action-parameter tells dpkg what to do and options control the behavior of the action in some way.
-
-**APT vs DPKG:** APT is a front-end to dpkg that is more user-friendly than the earlier select front-end. While dpkg handles individual package activities, APT handles package relationships (particularly dependencies), as well as the sourcing and administration of higher-level versioning choices (release tracking and version pinning).
-
-**GREP:** *(global regular expression print)* In the simplest terms, grep (global regular expression print) is a small family of commands that search input files for a search string, and print the lines that match it.
-
-**GETENT:** *(get entry)* getent is a Unix command that helps a user get entries in a number of important text files called databases. This includes the passwd and group databases which store user information – hence getent is a common way to look up user details on Unix. Since getent uses the same name service as the system, getent will show all information, including that gained from network information sources such as LDAP. The databases it searches in are: ahosts, ahostsv4, ahostsv6, aliases, ethers (Ethernet addresses), group, gshadow, hosts, netgroup, networks, passwd, protocols, rpc, services, and shadow.
-
-**CHAGE:** The chage command is self-described as the "change user password expiry information" utility. According to the chage man page: The chage command changes the number of days between password changes and the date of the last password change.
-
-<br>
-
-----
-<br>
 
 ## Questions I was asked when evaluating the project
 
@@ -386,13 +414,10 @@ In short, Aptitude has more features and hence can be termed as a better package
 
 > **Show the service you have chosen, and explain how it works and why did you chose it.**
 
-<br>
-
-----
-<br>
-
 ## Bibliography
-<br>
+
+<details>
+<summary> Click me 👽 </summary>
 
 **AppArmor**
 
@@ -489,3 +514,4 @@ https://en.wikipedia.org/wiki/Unix
 **Virtual Machine**
 
 https://cloud.google.com/learn/what-is-a-virtual-machine
+</details>
