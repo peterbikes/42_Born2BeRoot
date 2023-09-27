@@ -9,11 +9,6 @@ You will create your first machine in VirtualBox (or UTM if you can’t use Virt
 under specific instructions. Then, at the end of this project, you will be able to set up
 your own operating system while implementing strict rules.
 
-Grade: 125 / 100
-
-![grade](extra/grade.jpg)
-
-
 ## Index 
 
 <br>
