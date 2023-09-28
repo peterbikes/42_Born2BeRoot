@@ -44,8 +44,7 @@ There are Type 1 and 2 Hypervisors: A type 2 HV uses an OS, and then a software 
 
 ### Kernel
 The kernel is a computer program at the core of a computer's operating system and generally has complete control over everything in the system. It is the portion of the operating system code that is always resident in memory and facilitates interactions between hardware and software components. A full kernel controls all hardware resources (e.g. I/O, memory, cryptography) via device drivers, arbitrates conflicts between processes concerning such resources, and optimizes the utilization of common resources e.g. CPU & cache usage, file systems, and network sockets. On most systems, the kernel is one of the first programs loaded on startup (after the bootloader). It handles the rest of startup as well as memory, peripherals, and input/output (I/O) requests from software, translating them into data-processing instructions for the central processing unit. The kernel functions since the computer is turned on, until it is turned off, and it might be considered the most important part of the OS.
-
-<img style="float: right;" src="extra/kernel.png">
+<img align="right" src="extra/kernel.png">
 
 ### Linux kernel 
 The Linux kernel is a free and open-source, monolithic, modular, multitasking, Unix-like operating system kernel. It was originally authored in 1991 by Linus Torvalds for his i386-based PC, and it was soon adopted as the kernel for the GNU operating system, which was written to be a free (libre) replacement for Unix.
