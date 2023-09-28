@@ -65,30 +65,28 @@ A Linux distribution (often abbreviated as distro) is an operating system made f
 
 A typical Linux distribution comprises a Linux kernel, GNU tools and libraries, additional software, documentation, a window system (the most common being the X Window System, or, more recently, Wayland), a window manager, and a desktop environment.
 
-![distros](extra/distros.png)
-
 There are four main branches when it comes to Linux distros:
 
-![debian](extra/debian.png)
+<img align="right" src="extra/debian.png">
 
 ### The Debian Branch
 - Easiest to start if you are a complete beginer;
 - Most of Debian distros are based on UBUNTO, the most popular, most of commands and operations are the same as in UBUNTO, you just have like different "skins", like Kubunto or LinuxMint;
 - Most of them use apt as a package manager. If you see an apt command, you are most likely in a Debian based distro.
 
-![suse](extra/suse.png)
+<img align="right" src="extra/suse.png">
 
 ### The Suse Branch
 - One of the first distros of Linux;
 - The SUSE Linux Enterprise Server (SLES) is designed for use in mainframes, servers, and workstations.
 
-![redhat](extra/redhat.png)
+<img align="right" src="extra/redhat.png">
 
 ### The RedHat Branch
 - Fedora, the distro used by Linus Torvalds, is part of this branch.
 - Very solid, high level of security, preformance focoused;
 
-![arch](extra/arch.png)
+<img align="right" src="extra/arch.png">
 
 ### Arch Linux
 - For advanced users, very community driven;
