@@ -67,7 +67,7 @@ A typical Linux distribution comprises a Linux kernel, GNU tools and libraries, 
 
 There are four main branches when it comes to Linux distros:
 
-<img align="right" src="extra/debian.png">
+<img align="left" src="extra/debian.png">
 
 ### The Debian Branch
 - Easiest to start if you are a complete beginer;
