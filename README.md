@@ -74,7 +74,7 @@ There are four main branches when it comes to Linux distros:
 - Most of Debian distros are based on UBUNTO, the most popular, most of commands and operations are the same as in UBUNTO, you just have like different "skins", like Kubunto or LinuxMint;
 - Most of them use apt as a package manager. If you see an apt command, you are most likely in a Debian based distro.
 
-<img align="left" src="extra/suse.png">
+<img align="right" src="extra/suse.png">
 
 ### The Suse Branch
 - One of the first distros of Linux;
@@ -86,7 +86,7 @@ There are four main branches when it comes to Linux distros:
 - Fedora, the distro used by Linus Torvalds, is part of this branch.
 - Very solid, high level of security, preformance focoused;
 
-<img align="left" src="extra/arch.png">
+<img align="right" src="extra/arch.png">
 
 ### Arch Linux
 - For advanced users, very community driven;
