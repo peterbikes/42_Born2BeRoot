@@ -86,7 +86,7 @@ There are four main branches when it comes to Linux distros:
 - Fedora, the distro used by Linus Torvalds, is part of this branch.
 - Very solid, high level of security, preformance focoused;
 
-<img align="right" src="extra/arch.png">
+<img align="left" src="extra/arch.png">
 
 ### Arch Linux
 - For advanced users, very community driven;
