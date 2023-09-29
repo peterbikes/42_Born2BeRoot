@@ -25,7 +25,22 @@ your own operating system while implementing strict rules.
 	9. [The RedHat Branch](#the-redhat-branch)
 	10. [Arch Linux](#arch-linux)
 - [Things you should know during project defense](#things-you-should-know-during-project-defense)
-        
+    1. [LSBLK command](#lsblk-command)
+    2. [LVM](#lvm)
+    3. [Debian](#debian)
+    4. [Rocky Linux](#rocky-linux)
+    5. [SELinux](#selinux)
+    6. [AppArmor](#apparmor)
+    7. [Aptitude and Apt](#aptitude-and-apt)
+    8. [SSH Service](#ssh-service)
+    9. [UFW](#ufw)
+    10. [SUDO](#sudo)
+    11. [TTY](#tty)
+    12. [DPKG](#dpkg)
+    13. [APT and DPKG](#apt-and-dpkg)
+    14. [GREP](#grep)
+    15. [GETENT](#getent)
+    16. [CHAGE](#chage)
 
 - [List of useful commands](#list-of-useful-commands) 
 - [Questions I was asked when evaluating the project](#questions-i-was-asked-when-evaluating-the-project)
@@ -80,9 +95,11 @@ There are four main branches when it comes to Linux distros:
 - One of the first distros of Linux;
 - The SUSE Linux Enterprise Server (SLES) is designed for use in mainframes, servers, and workstations.
 
+
 ### The RedHat Branch
 - Fedora, the distro used by Linus Torvalds, is part of this branch.
 - Very solid, high level of security, preformance focoused;
+
 
 ### Arch Linux
 - For advanced users, very community driven;
@@ -121,7 +138,7 @@ Access can be constrained on such variables as which users and applications can 
 ### AppArmor
 AppArmor is an effective and easy-to-use Linux application security system. AppArmor proactively protects the operating system and applications from external or internal threats, even zero-day attacks, by enforcing good behavior and preventing both known and unknown application flaws from being exploited. AppArmor supplements the traditional Unix discretionary access control (DAC) model by providing mandatory access control (MAC). It has been included in the mainline Linux kernel since version 2.6.36 and its development has been supported by Canonical since 2009.
 
-### Aptitude | Apt
+### Aptitude and Apt
 
 First, what is a 'package'?
 
@@ -133,18 +150,18 @@ A package manager reduces the complexity for the end-user by automating the proc
 
 APT and Aptitude are package managers.
 
-### What is APT?
+#### What is APT?
 
 APT stands for Advanced Packaging Tool. It is an open-source tool, which means you can use it without the need to pay anything. APT is designed to handle software installation and removal. APT was part of Debian’s .deb package; however, it was updated to work with the RPM Package Manager.
 If you have used APT before, you would have noticed that it is a command-line tool. This means you need to use commands to work with it with no visual reference from a graphical interface (the initial plan was to include a graphical interface, but the idea was later dropped). To use it, you need to provide the package name. The package should have its sources specified in the ‘/etc/apt/sources.list.’ It should also contain all the dependencies list that the package needs to install automatically. If you use the apt command, it will not only download and install the required dependencies for the said package. As a user, you do not have to worry about the package dependencies.
 The approach taken by APT is flexible. This means that the user can configure how APT works, including adding new sources, providing up-gradation options, and so on!
 With time, APT showed improvements on how it can be handled. Also, Debian developers are in full control of how it gets updated.
 
-### What is Aptitude?
+#### What is Aptitude?
 
 Aptitude is also an advanced packaging tool. However, it is a front-end tool that gives users access to the user-interface to access functionality. This means that you can use Aptitude to install and remove packages using it. Debian created aptitude. But, with time, they released it for other RPM-based distributions.
 
-### Difference between APT and Aptitude
+#### Difference between APT and Aptitude
 
 Now that we have a good understanding of what APT and Aptitude has to offer, it is now time to learn about their difference. Let’s get started.
 The first difference you will notice is that APT is a lower-level package manager, and Aptitude is a high-level package manager. This means that APT can be used in other higher-level package managers.
@@ -168,7 +185,7 @@ Sudo stands for SuperUser (Switch User?) DO and is used to access restricted fil
 ### DPKG
 *(Debian Package Manager)* dpkg is a tool to install, build, remove and manage Debian packages. The primary and more user-friendly front-end for dpkg is aptitude(1). dpkg itself is controlled entirely via command line parameters, which consist of exactly one action and zero or more options. The action-parameter tells dpkg what to do and options control the behavior of the action in some way.
 
-### APT vs DPKG
+### APT and DPKG
 APT is a front-end to dpkg that is more user-friendly than the earlier select front-end. While dpkg handles individual package activities, APT handles package relationships (particularly dependencies), as well as the sourcing and administration of higher-level versioning choices (release tracking and version pinning).
 
 ### GREP
