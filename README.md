@@ -51,8 +51,6 @@ your own operating system while implementing strict rules.
 
 </details>
 
-<br>
-
 ## Loose Concepts
 
 
