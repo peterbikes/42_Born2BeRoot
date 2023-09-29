@@ -418,6 +418,8 @@ The chage command is self-described as the "change user password expiry informat
 <details>
 <summary> Click me 👽 </summary>
 
+<br>
+
 **AppArmor**
 
 https://apparmor.net
