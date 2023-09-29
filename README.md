@@ -80,13 +80,9 @@ There are four main branches when it comes to Linux distros:
 - One of the first distros of Linux;
 - The SUSE Linux Enterprise Server (SLES) is designed for use in mainframes, servers, and workstations.
 
-<img align="right" src="extra/redhat.png">
-
 ### The RedHat Branch
 - Fedora, the distro used by Linus Torvalds, is part of this branch.
 - Very solid, high level of security, preformance focoused;
-
-<img align="left" src="extra/arch.png">
 
 ### Arch Linux
 - For advanced users, very community driven;
