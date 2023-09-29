@@ -13,7 +13,9 @@ your own operating system while implementing strict rules.
 
 <br>
 
-- [Loose Concepts](#loose-concepts)
+<details>
+
+<summary>- [Loose Concepts](#loose-concepts)</summary>
 	1. [Virtual Machine](#virtual-machine)
 	2. [Kernel](#kernel)
 	3. [Linux Kernel](#linux-kernel)
@@ -24,6 +26,7 @@ your own operating system while implementing strict rules.
 	8. [The Suse Branch](#linux-distros)
 	9. [The RedHat Branch](#the-redhat-branch)
 	10. [Arch Linux](#arch-linux)
+</details>
 - [Things you should know during project defense](#things-you-should-know-during-project-defense)
     1. [LSBLK command](#lsblk-command)
     2. [LVM](#lvm)
