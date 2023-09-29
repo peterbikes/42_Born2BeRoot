@@ -12,7 +12,7 @@ your own operating system while implementing strict rules.
 ## Index 
 
 <details>
-<summary> __CLICK TO EXPAND__ 👽 </summary>
+<summary> Click me to expand 👽 </summary>
 
 <br>
 
